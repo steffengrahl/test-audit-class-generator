@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mein PHP Projekt{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Willkommen zum Twig-Test</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; {{ "now"|date("Y") }} - Erstellt mit Twig</p>
+    </footer>
+</body>
+</html>

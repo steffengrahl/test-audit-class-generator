@@ -1,0 +1,15 @@
+{% extends "layout/base.twig" %}
+
+{% block title %}Startseite{% endblock %}
+
+{% block content %}
+    <h2>{{ greeting }}</h2>
+    <p>Dies ist ein Beispiel-Template in einem Unterordner.</p>
+    
+    <h3>Features:</h3>
+    <ul>
+    {% for feature in features %}
+        <li>{{ feature }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
