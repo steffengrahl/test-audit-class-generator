@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Mein PHP Projekt{% endblock %}</title>
 </head>
-<body>
+<body class="page page-start">
     <header>
         <h1>Willkommen zum Twig-Test</h1>
-        <nav>
+        <nav class="nav-main">
             <ul>
                 <li><a href="index.php">Home</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         {% block content %}{% endblock %}
     </main>
 
