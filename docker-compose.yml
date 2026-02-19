@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/app
+      - ../audit-class-generator:/audit-class-generator
     working_dir: /app
     stdin_open: true
     tty: true
